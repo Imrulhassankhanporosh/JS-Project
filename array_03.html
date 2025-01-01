@@ -7,7 +7,20 @@
 </head>
 <body>
     <script>
-        
+        const arr=["Imrul","Hassan", 123, true,null];    //an array can contain along any type of data type
+        console.log(arr);                                //array size = 5, you can check this in the console log of the browser
+
+        const arr2=["Hello"];
+        let new_element =arr2.push("world");                               //push a new data in the last  element of the array
+        console.log("New array size is : "+new_element);                   //The push method returns the new length of the array
+        console.log(arr2);                                
+        let last_element =arr.pop();                                       //pop the last element of the array
+        console.log("this is the last element removed earlier: "+last_element);  //pop method removes the last element of the array and returns it
+        console.log(arr[2]);                                               //3rd element should be shown
+        console.log(arr.length);                                           //length of the array should be shown
+        console.log(arr2[arr2.length-1]);                                  //last element of the array should be shown
+
+
     </script>
 </body>
 </html>
