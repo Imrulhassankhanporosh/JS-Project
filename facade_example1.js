@@ -36,6 +36,11 @@ class Lights {
 }
 
 // Facade Class
+
+// The HomeTheaterFacade class acts as the facade (simplified interface) for the home theater system.
+// Its constructor accepts instances of the TV, SoundSystem, DVDPlayer, and Lights classes and stores them as properties.
+
+
 class HomeTheaterFacade {
     constructor(tv, soundSystem, dvdPlayer, lights) {
         this.tv = tv;
@@ -62,10 +67,16 @@ class HomeTheaterFacade {
 }
 
 // Client Code
+
+// Creates instances of the subsystem classes (TV, SoundSystem, DVDPlayer, and Lights).
+
 const tv = new TV();
 const soundSystem = new SoundSystem();
 const dvdPlayer = new DVDPlayer();
 const lights = new Lights();
+
+// Creates an instance of the HomeTheaterFacade class and passes the subsystem instances to it.
+// The facade instance now has access to all subsystems.
 
 const homeTheater = new HomeTheaterFacade(tv, soundSystem, dvdPlayer, lights);
 
