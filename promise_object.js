@@ -6,6 +6,12 @@
 
 // Promises allow handling asynchronous operations in a cleaner way by chaining .then() for success and .catch() for errors.
 
+// Benefits of Using Promises:
+
+// Avoiding Callback Hell: Promises make asynchronous code more readable and prevent the "callback hell" problem that occurs when you have nested callbacks.
+// Chaining: Promises support chaining, which allows you to perform multiple asynchronous operations one after the other.
+// Error Handling: Promises provide a clean way to handle errors using .catch().
+
 
 console.log("starts.");
 
