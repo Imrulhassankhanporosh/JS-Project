@@ -23,8 +23,10 @@ console.log("multiplication function called :" + multiply(5, 6));
 
 
 setTimeout(function () {       //anonymous function call
-    console.log("hello")
+    console.log("hello");
 }, 1000);
+
+setTimeout(() => console.log("hello arrow function"),1000);    //arrow function
 
 
 setTimeout(greet, 2000, "alice");    //named function call
